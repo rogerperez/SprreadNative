@@ -21,6 +21,8 @@
 		6B1EFC8418E685AE0052F700 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1EFC6618E685AD0052F700 /* UIKit.framework */; };
 		6B1EFC8C18E685AE0052F700 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B1EFC8A18E685AE0052F700 /* InfoPlist.strings */; };
 		6B1EFC8E18E685AE0052F700 /* SprreadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1EFC8D18E685AE0052F700 /* SprreadTests.m */; };
+		6B20CF3218F0F3EA00A70F5C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B20CF3118F0F3EA00A70F5C /* User.m */; };
+		6B20CF3518F0F56400A70F5C /* Sprread.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B20CF3418F0F56400A70F5C /* Sprread.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		6B1EFC8918E685AE0052F700 /* SprreadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SprreadTests-Info.plist"; sourceTree = "<group>"; };
 		6B1EFC8B18E685AE0052F700 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6B1EFC8D18E685AE0052F700 /* SprreadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SprreadTests.m; sourceTree = "<group>"; };
+		6B20CF3018F0F3EA00A70F5C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Model/User.h; sourceTree = "<group>"; };
+		6B20CF3118F0F3EA00A70F5C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Model/User.m; sourceTree = "<group>"; };
+		6B20CF3318F0F56400A70F5C /* Sprread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sprread.h; path = Model/Sprread.h; sourceTree = "<group>"; };
+		6B20CF3418F0F56400A70F5C /* Sprread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sprread.m; path = Model/Sprread.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +118,9 @@
 		6B1EFC6818E685AD0052F700 /* Sprread */ = {
 			isa = PBXGroup;
 			children = (
-				6B1EFC7118E685AD0052F700 /* AppDelegate.h */,
-				6B1EFC7218E685AD0052F700 /* AppDelegate.m */,
+				6B20CF2F18F0F39800A70F5C /* Controller */,
+				6B20CF2E18F0F38E00A70F5C /* Model */,
 				6B1EFC7418E685AD0052F700 /* Main.storyboard */,
-				6B1EFC7718E685AD0052F700 /* ViewController.h */,
-				6B1EFC7818E685AD0052F700 /* ViewController.m */,
 				6B1EFC7A18E685AD0052F700 /* Images.xcassets */,
 				6B1EFC6918E685AD0052F700 /* Supporting Files */,
 			);
@@ -126,6 +130,8 @@
 		6B1EFC6918E685AD0052F700 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6B1EFC7118E685AD0052F700 /* AppDelegate.h */,
+				6B1EFC7218E685AD0052F700 /* AppDelegate.m */,
 				6B1EFC6A18E685AD0052F700 /* Sprread-Info.plist */,
 				6B1EFC6B18E685AD0052F700 /* InfoPlist.strings */,
 				6B1EFC6E18E685AD0052F700 /* main.m */,
@@ -150,6 +156,26 @@
 				6B1EFC8A18E685AE0052F700 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B20CF2E18F0F38E00A70F5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B20CF3018F0F3EA00A70F5C /* User.h */,
+				6B20CF3118F0F3EA00A70F5C /* User.m */,
+				6B20CF3318F0F56400A70F5C /* Sprread.h */,
+				6B20CF3418F0F56400A70F5C /* Sprread.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6B20CF2F18F0F39800A70F5C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6B1EFC7718E685AD0052F700 /* ViewController.h */,
+				6B1EFC7818E685AD0052F700 /* ViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,8 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B20CF3218F0F3EA00A70F5C /* User.m in Sources */,
 				6B1EFC7918E685AD0052F700 /* ViewController.m in Sources */,
 				6B1EFC7318E685AD0052F700 /* AppDelegate.m in Sources */,
+				6B20CF3518F0F56400A70F5C /* Sprread.m in Sources */,
 				6B1EFC6F18E685AD0052F700 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +484,7 @@
 				6B1EFC9318E685AE0052F700 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B1EFC9418E685AE0052F700 /* Build configuration list for PBXNativeTarget "SprreadTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +493,7 @@
 				6B1EFC9618E685AE0052F700 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
