@@ -13,7 +13,7 @@
 @synthesize userName = _userName;
 @synthesize userImage = _userImage;
 
-- (id)initWithUserName:(NSString *)userName userImage:(UIImage *)userImage
+- (id)initWithUserName:(NSString *)userName userImage:(UIImage *)userImage loginType:(NSString *)loginType
 {
     if ((self = [super init])) {
         self.userName = _userName;
