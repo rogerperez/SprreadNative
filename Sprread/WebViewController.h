@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <UIKit/UIWebView.h>
 
 @interface WebViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UIWebView *webView;
 @property (strong) NSURL *loginUrl;
-
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 - (IBAction)cancelButtonTap:(id)sender;
 
 @end

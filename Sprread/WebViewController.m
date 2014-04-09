@@ -8,14 +8,17 @@
 
 #import "WebViewController.h"
 
-@interface WebViewController ()
+@interface WebViewController() <UIWebViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end
 
 @implementation WebViewController
 
-@synthesize webView = _webView;
 @synthesize loginUrl = _loginUrl;
+@synthesize spinner = _spinner;
+@synthesize webView = _webView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,10 +31,11 @@
 
 - (void)viewDidLoad
 {
+    NSLog(@"View loaded");
     [super viewDidLoad];
     NSURLRequest *loginUrlRequest = [NSURLRequest requestWithURL:[self loginUrl]];
     
-    [self.webView loadRequest:loginUrlRequest];
+    [self loadWebViewWithUrlRequest:loginUrlRequest showSpinner:NO];
 
     // Do any additional setup after loading the view.
 }
@@ -42,18 +46,22 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)loadWebViewWithUrlRequest:(NSURLRequest *)urlRequest showSpinner:(BOOL)showSpinner
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    [self.webView loadRequest:urlRequest];
+    self.spinner.hidden = !showSpinner;
 }
-*/
 
 - (IBAction)cancelButtonTap:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+#pragma mark - UIWebViewDelegate
+
+- (void)webViewDidStartLoad:(UIWebView *)webView
+{
+    // Finished loading, hide the activity indicator in the status bar.
+    NSLog(@"Starting Load");
+}
+
 @end

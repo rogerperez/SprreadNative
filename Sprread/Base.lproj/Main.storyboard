@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51P-h2-dat">
-                                <rect key="frame" x="20" y="387" width="280" height="59"/>
+                                <rect key="frame" x="20" y="385" width="280" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="FacebookLogin">
                                     <color key="titleColor" red="0.2827623742" green="0.82203209919999998" blue="0.31108778549999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duk-lC-0Mx">
-                                <rect key="frame" x="20" y="454" width="280" height="59"/>
+                                <rect key="frame" x="20" y="460" width="280" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="GooglePlusLogin">
                                     <color key="titleColor" red="0.2827623742" green="0.82203209919999998" blue="0.31108778549999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -79,7 +79,6 @@
                                                 <action selector="cancelButtonTap:" destination="vgR-YI-v0g" id="T2e-KB-Zoe"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="ZJj-RC-K6s"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -88,13 +87,18 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="5aG-bt-lcm">
+                                <rect key="frame" x="280" y="536" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="webView" destination="DM2-4P-d2G" id="ANe-y0-p9a"/>
+                        <outlet property="spinner" destination="5aG-bt-lcm" id="IDF-Nx-fcI"/>
+                        <outlet property="webView" destination="DM2-4P-d2G" id="lmj-In-W4c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ajW-Cg-AbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
