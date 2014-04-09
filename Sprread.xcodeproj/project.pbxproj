@@ -22,7 +22,8 @@
 		6B1EFC8E18E685AE0052F700 /* SprreadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1EFC8D18E685AE0052F700 /* SprreadTests.m */; };
 		6B20CF3218F0F3EA00A70F5C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B20CF3118F0F3EA00A70F5C /* User.m */; };
 		6B20CF3518F0F56400A70F5C /* Sprread.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B20CF3418F0F56400A70F5C /* Sprread.m */; };
-		6B20CF8418F25E8600A70F5C /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B20CF8318F25E8600A70F5C /* NavigationController.m */; };
+		6B8842E218F2617900350396 /* StartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8842E118F2617900350396 /* StartController.m */; };
+		6B8842E518F39DF800350396 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8842E418F39DF800350396 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +58,10 @@
 		6B20CF3118F0F3EA00A70F5C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Model/User.m; sourceTree = "<group>"; };
 		6B20CF3318F0F56400A70F5C /* Sprread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sprread.h; path = Model/Sprread.h; sourceTree = "<group>"; };
 		6B20CF3418F0F56400A70F5C /* Sprread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sprread.m; path = Model/Sprread.m; sourceTree = "<group>"; };
-		6B20CF8218F25E8600A70F5C /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigationController.h; path = ../NavigationController.h; sourceTree = "<group>"; };
-		6B20CF8318F25E8600A70F5C /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationController.m; path = ../NavigationController.m; sourceTree = "<group>"; };
+		6B8842E018F2617900350396 /* StartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartController.h; sourceTree = "<group>"; };
+		6B8842E118F2617900350396 /* StartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartController.m; sourceTree = "<group>"; };
+		6B8842E318F39DF800350396 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		6B8842E418F39DF800350396 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,8 +175,10 @@
 		6B20CF2F18F0F39800A70F5C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6B20CF8218F25E8600A70F5C /* NavigationController.h */,
-				6B20CF8318F25E8600A70F5C /* NavigationController.m */,
+				6B8842E318F39DF800350396 /* WebViewController.h */,
+				6B8842E418F39DF800350396 /* WebViewController.m */,
+				6B8842E018F2617900350396 /* StartController.h */,
+				6B8842E118F2617900350396 /* StartController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -276,9 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B20CF3218F0F3EA00A70F5C /* User.m in Sources */,
+				6B8842E518F39DF800350396 /* WebViewController.m in Sources */,
 				6B1EFC7318E685AD0052F700 /* AppDelegate.m in Sources */,
-				6B20CF8418F25E8600A70F5C /* NavigationController.m in Sources */,
 				6B20CF3518F0F56400A70F5C /* Sprread.m in Sources */,
+				6B8842E218F2617900350396 /* StartController.m in Sources */,
 				6B1EFC6F18E685AD0052F700 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

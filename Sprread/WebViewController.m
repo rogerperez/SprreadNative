@@ -1,18 +1,21 @@
 //
-//  NavigationController.m
+//  WebViewController.m
 //  Sprread
 //
-//  Created by Roger Perez on 4/6/14.
+//  Created by Roger Perez on 4/7/14.
 //  Copyright (c) 2014 Roger Perez. All rights reserved.
 //
 
-#import "NavigationController.h"
+#import "WebViewController.h"
 
-@interface NavigationController ()
+@interface WebViewController ()
 
 @end
 
-@implementation NavigationController
+@implementation WebViewController
+
+@synthesize webView = _webView;
+@synthesize loginUrl = _loginUrl;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,6 +29,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSURLRequest *loginUrlRequest = [NSURLRequest requestWithURL:[self loginUrl]];
+    
+    [self.webView loadRequest:loginUrlRequest];
+
     // Do any additional setup after loading the view.
 }
 
@@ -46,4 +53,7 @@
 }
 */
 
+- (IBAction)cancelButtonTap:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
