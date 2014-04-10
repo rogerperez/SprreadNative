@@ -16,10 +16,6 @@
 
 @implementation WebViewController
 
-@synthesize loginUrl = _loginUrl;
-@synthesize spinner = _spinner;
-@synthesize webView = _webView;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -31,10 +27,9 @@
 
 - (void)viewDidLoad
 {
-    NSLog(@"View loaded");
     [super viewDidLoad];
     NSURLRequest *loginUrlRequest = [NSURLRequest requestWithURL:[self loginUrl]];
-    
+    [self.webView setDelegate:self];
     [self loadWebViewWithUrlRequest:loginUrlRequest showSpinner:NO];
 
     // Do any additional setup after loading the view.
