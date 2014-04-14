@@ -24,6 +24,7 @@
 		6B20CF3518F0F56400A70F5C /* Sprread.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B20CF3418F0F56400A70F5C /* Sprread.m */; };
 		6B8842E218F2617900350396 /* StartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8842E118F2617900350396 /* StartController.m */; };
 		6B8842E518F39DF800350396 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8842E418F39DF800350396 /* WebViewController.m */; };
+		6BF6FEBB18FB72E400F3E210 /* FeedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF6FEBA18FB72E400F3E210 /* FeedController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		6B8842E118F2617900350396 /* StartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartController.m; sourceTree = "<group>"; };
 		6B8842E318F39DF800350396 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		6B8842E418F39DF800350396 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		6BF6FEB918FB72E400F3E210 /* FeedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedController.h; path = ../FeedController.h; sourceTree = "<group>"; };
+		6BF6FEBA18FB72E400F3E210 /* FeedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedController.m; path = ../FeedController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,8 @@
 		6B20CF2F18F0F39800A70F5C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6BF6FEB918FB72E400F3E210 /* FeedController.h */,
+				6BF6FEBA18FB72E400F3E210 /* FeedController.m */,
 				6B8842E318F39DF800350396 /* WebViewController.h */,
 				6B8842E418F39DF800350396 /* WebViewController.m */,
 				6B8842E018F2617900350396 /* StartController.h */,
@@ -282,6 +287,7 @@
 			files = (
 				6B20CF3218F0F3EA00A70F5C /* User.m in Sources */,
 				6B8842E518F39DF800350396 /* WebViewController.m in Sources */,
+				6BF6FEBB18FB72E400F3E210 /* FeedController.m in Sources */,
 				6B1EFC7318E685AD0052F700 /* AppDelegate.m in Sources */,
 				6B20CF3518F0F56400A70F5C /* Sprread.m in Sources */,
 				6B8842E218F2617900350396 /* StartController.m in Sources */,
