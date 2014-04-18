@@ -35,6 +35,7 @@
 		6B8C899B1900CA3200F19B44 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C89921900CA3200F19B44 /* AFURLSessionManager.m */; };
 		6B8C899E1900CA6400F19B44 /* Business.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8C899D1900CA6400F19B44 /* Business.m */; };
 		6B8C89A01900CAB300F19B44 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8C899F1900CAB300F19B44 /* MapKit.framework */; };
+		6B8C89A21901B95900F19B44 /* feedPreview.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B8C89A11901B95900F19B44 /* feedPreview.json */; };
 		6BF6FEBB18FB72E400F3E210 /* FeedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF6FEBA18FB72E400F3E210 /* FeedController.m */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +97,7 @@
 		6B8C899C1900CA6400F19B44 /* Business.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Business.h; sourceTree = "<group>"; };
 		6B8C899D1900CA6400F19B44 /* Business.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Business.m; sourceTree = "<group>"; };
 		6B8C899F1900CAB300F19B44 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6B8C89A11901B95900F19B44 /* feedPreview.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = feedPreview.json; sourceTree = "<group>"; };
 		6BF6FEB918FB72E400F3E210 /* FeedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedController.h; path = ../FeedController.h; sourceTree = "<group>"; };
 		6BF6FEBA18FB72E400F3E210 /* FeedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedController.m; path = ../FeedController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,6 +173,7 @@
 		6B1EFC6918E685AD0052F700 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6B8C89A11901B95900F19B44 /* feedPreview.json */,
 				6B8C897F1900CA3200F19B44 /* AFNetworking */,
 				6B1EFC7118E685AD0052F700 /* AppDelegate.h */,
 				6B1EFC7218E685AD0052F700 /* AppDelegate.m */,
@@ -330,6 +333,7 @@
 			files = (
 				6B1EFC7B18E685AD0052F700 /* Images.xcassets in Resources */,
 				6B1EFC6D18E685AD0052F700 /* InfoPlist.strings in Resources */,
+				6B8C89A21901B95900F19B44 /* feedPreview.json in Resources */,
 				6B1EFC7618E685AD0052F700 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
